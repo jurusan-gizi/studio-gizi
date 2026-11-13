@@ -434,7 +434,7 @@ function gambar(){
     bingkai(W-w-28, dasar-h-28, w, h, 14, ()=>kamera(W-w-28, dasar-h-28, w, h));
   }else if(v === "samping"){
     latar();
-    const atas = S.tampilKop ? 102 : 40, tinggi = dasar-atas-40, lebarLayar = Math.min(820, tinggi*16/9), tl = lebarLayar*9/16;
+    const atas = S.tampilKop ? 102 : 40, tinggi = dasar-atas-(S.tampilNama ? 118 : 40), lebarLayar = Math.min(820, tinggi*16/9), tl = lebarLayar*9/16;
     const yl = atas + (tinggi-tl)/2, wk = W-40-lebarLayar-24-40;
     bingkai(40, yl, lebarLayar, tl, 12, ()=>layar(40, yl, lebarLayar, tl));
     bingkai(40+lebarLayar+24, yl, wk, tl, 12, ()=>kamera(40+lebarLayar+24, yl, wk, tl));
